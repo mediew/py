@@ -1,0 +1,14 @@
+import matplotlib
+import matplotlib.pyplot as plt
+matplotlib.rcParams['font.family'] = 'Microsoft YaHei'
+
+interval = [0,5,10,15,20,25,30,35,40,45,60,90]
+width = [5,5,5,5,5,5,5,5,5,15,30,60]
+quantity = [836,2737,3723,3926,3596,1438,3273,642,824,613,215,47]
+
+fig = plt.figure(figsize=(16,9),dpi=72)
+ax1 = fig.add_subplot()
+ax1.bar([x+0.5 for x in range(len(interval))], quantity, width=1)
+ax1.set_xticks([x for x in range(len(interval))])
+ax1.set_xticklabels(interval)
+plt.show()

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border = "1">
+        {% for key, value in result.items() %}   <!--task.items()把字典变为[(key, value),(key, value),······]，注意这里的result对应return里的关键字参数result，而非变量resul-->
+            <tr>
+                <th>{{ key }}</th>
+                <td>{{ value }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

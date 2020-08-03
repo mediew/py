@@ -1,0 +1,57 @@
+from tkinter import *
+
+class canvasdemo:
+    def __init__(self):
+        window = Tk()
+        window.title('canvas demo')
+        
+        canvas = Canvas(window, width = 200, height = 100, bg = 'white')
+        canvas.pack()
+        
+        frame = Frame(window)
+        frame.pack()
+        btRectangle = Button(frame, text = 'Rectangle', command = self.displayRect)
+        btOval = Button(frame, text = 'Oval', command = self.displayOval)
+        btArc = Button(frame, text = 'Arc', command = self.displayArc)
+        btPolygon = Button(frame, text = 'Polygon', command = self.displayPolygon)
+        btLine = Button(frame, text = 'Line', command = self.displayLine)
+        btString = Button(frame, text = 'String', command = self.displayString)
+        btClear = Button(frame, text = 'Clear', command = self.clearcanvas)
+        
+        btRectangle.grid(row = 1, column = 1)
+        btOval.grid(row = 1, column = 2)
+        btArc.grid(row = 1, column = 3)
+        btPolygon.grid(row = 1, column = 4)
+        btLine.grid(row = 1, column = 5)
+        btString.grid(row = 1, column = 6)
+        btClear.grid(row = 1, column = 7)
+        
+        window.mainloop()
+        
+    def displayRect(self):
+        window = Tk()
+        window.title('canvas demo')
+        canvas = Canvas(window, width = 200, height = 100, bg = 'white')
+        canvas.pack()
+        canvas.create_rectangle(10, 10, 190, 90, tags = 'rect')
+        
+    def displayOval(self):
+        canvas.create_oval(10, 10, 190, 90, fill = 'red', tags = 'oval')
+        
+    def displayArc(self):
+        canvas.create_arc(10, 10, 190, 90, start = 0, extent = 90, width = 8, fill = 'red', 
+            tags = 'arc')
+    def displayPolygon(self):
+        canvas.create_polygon(10, 10, 190, 90, 30, 50, tags = 'polygon')
+    def displayLine(self):
+        canvas.create_line(10, 10, 190, 90, fill = 'red', tags = 'line')
+        canvas.create_line(10, 10, 190, 10, width = 9, arrow = 'last', 
+            activefill = 'blue', tags = 'line')
+    def displayString(self):
+        canvas.create_text(60, 40, text = 'hi, I am a string', 
+            font = 'Times 10 bold underline', tags = 'string')
+            
+    def clearcanvas(self):
+        canvas.delete('rect', 'oval', 'arc', 'polygon', 'line', 'string')
+
+canvasdemo()

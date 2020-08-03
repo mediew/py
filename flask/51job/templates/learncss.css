@@ -1,0 +1,33 @@
+p{
+    color: cadetblue;
+    font-size: medium;
+}
+#red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+*{
+
+}
+p.blue{
+    font-size: 30px;
+}
+h1, span{
+
+}
+/*
+p为选择器(selectors),选中页面中所有的p元素
+{}里为声明块,由一个一个的声明组成,声明表现为键值对的形式,声明之间有分号隔开
+常用选择器:
+    元素选择器:如p,h1,div
+    id选择器:#id,注意id值不能相同
+    类选择器:根据元素的class值选中一组元素,.class值{},class指一类对象,可以相同,用的最多
+    通配选择器:对页面所有元素起作用
+    交集选择器:如果有元素选择器必须以元素选择器开头,如div.blue{}
+    并集选择器:选择多个元素,如h1, span{}
+    子元素选择器:选择div的子元素span, 即div>span{}, 若有多个div,  则可以找出div的属性,如div.box>span{}
+    后代元素选择器:选择div的子元素, 孙元素等所有元素名相同的后代元素, 即div span{}
+    兄弟元素选择器:如p+span表示p后面的紧接着的span   p~span表示选择p元素后的所有的兄弟元素
+*/
