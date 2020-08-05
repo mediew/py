@@ -14,11 +14,12 @@ font = FontProperties(
     weight='bold',
     size=15
 )
-
+plt.rcParams['font.sans-serif'] = ['simsun']
+plt.rcParams['axes.unicode_minus'] = False    # 设置中文字体后用来正常显示正负号
 # 设置整图标题和子图标题
 # fig.suptitle('bold figure suptitle', fontsize=14, fontweight='bold')
-fig.suptitle('加粗整图标题', fontsize=20, color='r')   # 由于修改了配置文件故无需设置字体
-ax.set_title('axes title', fontsize=12, color='c')   # 可以直接设置颜色和大小
+fig.suptitle('加粗整图标题', fontsize=20, color='r')
+ax.set_title('axes title', fontsize=12, color='c')
 # 设置xy轴标签
 ax.set_xlabel('x标签')
 ax.set_ylabel('ylabel')
