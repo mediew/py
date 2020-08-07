@@ -37,3 +37,6 @@ product(2, 3)
 # 6 (3,)
 print(product())
 # TypeError: product() missing 1 required positional argument: 'x'
+'''
+发散：装饰器设置要装饰的函数的参数时常用(*args, **kw),即可传入任何类型的参数，但执行时仍要按照规定的顺序写
+'''
