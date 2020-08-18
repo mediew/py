@@ -5,7 +5,6 @@ import xlwt
 
 '''
 get_text() 方法,这个方法获取到tag中包含的所有文版内容包括子孙tag中的内容,并将结果作为Unicode字符串返回
-
 '''
 
 
