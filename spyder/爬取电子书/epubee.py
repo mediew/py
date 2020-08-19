@@ -1,6 +1,15 @@
 import requests
 from bs4 import BeautifulSoup as bs
-# 爬取 http://reader.epubee.com/ 并用sigil软件制作成epub文件
+
+"""
+Target:
+    爬取 http://reader.epubee.com/ 上电子书资源，并用 Sigil 软件制作成epub文件
+Tips:
+    map(f, iterable)
+    utf-8网页出现乱码用utf-8-sig编码
+    BeautifulSoup对象提取class属性结果是list，其他属性是str
+    open()函数'a'参数表示追加模式, 'w'表示覆盖模式
+"""
 
 
 def get_url_list():
