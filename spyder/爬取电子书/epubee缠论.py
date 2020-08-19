@@ -103,6 +103,7 @@ def main():
 </html>
 """
             f.write(down)
+        print('%s:完成！' % title)
 
 
 if __name__ == '__main__':
