@@ -20,3 +20,9 @@ person('Meachael', 30, **kw)
 d = dict(name='Meachael', age=30)
 print(d)
 # {'name': 'Meachael', 'age': 30},可见函数dict的参数为关键字参数
+
+
+def test_args(**kw):
+    print(kw)
+
+test_args(a = ('test'))
