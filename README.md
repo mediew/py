@@ -4,4 +4,14 @@
 目前初步入门Python，以后感兴趣的方向主要有 ``Web编程`` 、``爬虫`` 、``数据分析`` 、``深度学习`` 等，希望能用Python实现一个个人博客网站。  
 刚入门编程，代码写的很糙，还请各位大神多多指教。
 
-![](https://www.liaoxuefeng.com/files/attachments/922915342925824/0)
+![](https://raw.githubusercontent.com/mediew/pic/master/0.png)
+
+## 目录  
+
+:bookmark_tabs:[**数据分析**](https://github.com/mediew/pynote/tree/master/data_analysis  )
+
+:beetle:[**爬虫**](https://github.com/mediew/pynote/tree/master/spyder)
+
+:rocket:[**Python进阶**](https://github.com/mediew/pynote/tree/master/python_advance)
+
+。。。
